@@ -76,19 +76,60 @@ console.log(dados()); // Retorna 'André, 29, Rio de Janeiro, Designer'
 //outrosDados(); // retorna um erro
 
 // Crie uma função para verificar se um valor é Truthy
-
+function isTruthy(dado) {
+  return !!dado;
+}
 // Crie uma função matemática que retorne o perímetro de um quadrado
 // lembrando: perímetro é a soma dos quatro lados do quadrado
+
+function Areaperimetro(lado) {
+  return lado * 4;
+}
 
 // Crie uma função que retorne o seu nome completo
 // ela deve possuir os parâmetros: nome e sobrenome
 
+function NomeCompleto(nome, sobrenome) {
+  const NomeCompleto = nome + sobrenome;
+  return NomeCompleto;
+}
+
+NomeCompleto("Miguel", "Mendes");
+console.log(NomeCompleto("Miguel", " Mendes"));
+
 // Crie uma função que verifica se um número é par
+
+function par(numero) {
+  var numero = par / 2;
+  if (numero === 0) {
+    return "O número é par";
+  } else numero !== 0;
+  return "O número é impar";
+}
 
 // Crie uma função que retorne o tipo de
 // dado do argumento passado nela (typeof)
+
+function TipoDeDado(dado) {
+  return typeof dado;
+}
 
 // addEventListener é uma função nativa do JavaScript
 // o primeiro parâmetro é o evento que ocorre e o segundo o Callback
 // utilize essa função para mostrar no console o seu nome completo
 // quando o evento 'scroll' ocorrer.
+
+addEventListener("scroll", function () {
+  console.log("andré Rafael");
+});
+
+// Corrija o erro abaixo
+var totalPaises = 193;
+
+function precisoVisitar(paisesVisitados) {
+  return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
+}
+function jaVisitei(paisesVisitados) {
+  return `Já visitei ${paisesVisitados} do total de ${totalPaises} países`;
+}
+precisoVisitar(20);
